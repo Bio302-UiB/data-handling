@@ -1,0 +1,29 @@
+---
+title: "Making tidy data"
+author: Richard J. Telford
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, rows.print = 3)
+library("learnr")
+library("tidyverse")
+theme_set(theme_classic())
+
+tutorial_options(exercise.cap = "Exercise")
+```
+
+## The need for tidy data
+
+> All Happy families are alike; each unhappy family is unhappy in its ownway. Leo Tolstoy
+
+It is possible to arrange data in many bizare ways
+
+
+pivot_longer
+
+pivot_wider

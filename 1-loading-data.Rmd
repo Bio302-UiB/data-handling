@@ -1,0 +1,60 @@
+---
+title: "Loading data"
+author: Richard J. Telford
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.height = 1, fig.width = 5)
+library("learnr")
+library("tidyverse")
+theme_set(theme_classic())
+
+tutorial_options(exercise.cap = "Exercise")
+```
+
+## Data formats
+
+This tutorial will help you to import data into R.
+
+Data stored many different formats can be imported into R.
+It is important to import the data in its original format, as converting formats may introduce errors and makes the process non-reproducible.
+This tutorial uses the `readr` package for importing text files (e.g. csv files) and the `readxl` package for importing excel files
+
+## Importing text files
+
+The `readr` package is loaded when `tidyverse` is loaded.
+
+
+
+The advantages of `readr` functions over base R are 
+
+
+## Importing excel file
+
+Despite well [known problems](https://doi.org/10.1186/s13059-016-1044-7) with Excel and its ease of corrupting data with it, Excel continues to be a popular format. 
+Rather than exporting data from the Excel file into a `csv` file, the `readxl` package can import files directly into R.
+
+```{r readxl}
+#find names of excel sheets
+readxl::excel_sheets()
+
+readxl::read_excel()
+
+```
+
+
+### Reading multiple sheets
+
+
+
+
+
+
+
+
+
