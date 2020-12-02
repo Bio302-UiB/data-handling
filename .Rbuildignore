@@ -1,0 +1,5 @@
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^inst/tutorials/tidying-data/tidying-data\.Rmd$
